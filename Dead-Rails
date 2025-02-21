@@ -82,7 +82,7 @@ local Dropdown = Tab:CreateDropdown({
 })
 
 
-local Button = Tab:CreateButton({
+local RefreshButton = Tab:CreateButton({
    Name = "Refresh Items",
    Callback = function()
        
@@ -92,7 +92,7 @@ local Button = Tab:CreateButton({
 })
 
 
-local Button = Tab:CreateButton({
+local collectButton = Tab:CreateButton({
    Name = "Collect Selected Item",
    Callback = function()
        local selectedItemName = Dropdown.CurrentOption
@@ -190,7 +190,7 @@ local collectAllButton = Tab:CreateButton({
 
 
 
-local Tab = Window:CreateTab("ESP", 4483362458)
+local EspTab = Window:CreateTab("ESP", 4483362458)
 
 
 local ESPHandles = {}
@@ -313,9 +313,9 @@ local espToggle = EspTab:CreateToggle({
     end
 })
 
-local Tab = Window:CreateTab("Report Bugs", 4483362458) 
+local RTab = Window:CreateTab("Report Bugs", 4483362458) 
 
-local Button = Tab:CreateButton({
+local DButton = RTab:CreateButton({
    Name = "Discord: sajad7258",
    Callback = function()
    end,
